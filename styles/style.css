@@ -2,7 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
-#header-title {
+.main-color {
   font-family: "Berkshire Swash", cursive;
   color: #ff5e19;
+}
+
+.extra-height {
+  height: 35rem;
+}
+
+.card {
+  height: 25rem;
 }

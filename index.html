@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <section class="container grid gap-y-10 mx-auto">
+    <section class="container grid gap-y-12 mx-auto">
       <!-- Header area start -->
 
       <header class="bg-black w-full grid grid-cols-3">
@@ -31,9 +31,7 @@
 
         <!-- image section end -->
         <section class="title flex flex-col justify-center">
-          <h1 class="text-5xl text-center font" id="header-title">
-            My Best Five
-          </h1>
+          <h1 class="text-5xl text-center font main-color">My Best Five</h1>
           <p class="text-center text-white pt-5">
             This is one guy's list of the 6 best footballers on the planet right
             now. It's as easy as that.
@@ -44,7 +42,228 @@
       <!-- Header area end -->
 
       <!-- Main area start -->
+      <main class="flex justify-evenly">
+        <!-- card section start -->
+        <section class="grid grid-cols-3 gap-x-6">
+          <!-- card-1 -->
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144.png"
+                alt="Leonel-Messi"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Lionel Messi</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>36 Goals</span>
+                <span>120 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-1-end -->
 
+          <!-- card-2-start -->
+
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144(1).png"
+                alt="Neymar-Jr"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Neymar Jr</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>32 Goals</span>
+                <span>100 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-2-end -->
+
+          <!-- card-3-start -->
+
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144(2).png"
+                alt="Kylian Mbappé"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Kylian Mbappé</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>32 Goals</span>
+                <span>100 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-3-end -->
+
+          <!-- card-4-start -->
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144(3).png"
+                alt="Vítor Machado"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Vítor Machado</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>32 Goals</span>
+                <span>100 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-4-end -->
+
+          <!-- card-5-start -->
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144(4).png"
+                alt="Sergio Ramos"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Sergio Ramos</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>32 Goals</span>
+                <span>100 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-5-end -->
+
+          <!-- card-6-start -->
+          <div class="card w-75 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="w-full object-cover"
+                src="./img/Rectangle 144(5).png"
+                alt="Renato Sanches"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-center text-2xl font-bold">Renato Sanches</h2>
+              <div class="text-sm flex justify-center gap-5 text-gray-400">
+                <span>32 Goals</span>
+                <span>100 Assist</span>
+              </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary w-full">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- card-6-end -->
+        </section>
+
+        <!-- card section end -->
+
+        <!--  Select player and input section -->
+        <section class="grid grid-rows-2">
+          <!-- select player section start-->
+          <div
+            id="select-player"
+            class="card px-36 bg-black text-white shadow-xl"
+          >
+            <h2 class="text-3xl text-center pt-4">Selected-v</h2>
+          </div>
+          <!-- select player section end-->
+
+          <!-- Input section start -->
+
+          <div
+            id=""
+            class="extra-height w-75 bg-black text-white shadow-xl pb-14"
+          >
+            <h2 class="text-3xl text-center pt-4">Budget</h2>
+
+            <!-- input -->
+
+            <div class="flex justify-evenly items-center mt-6">
+              <!-- PerPlayer section start -->
+              <label for="per-player" class="text-gray-200"> Per Player </label>
+              <input
+                class="w-36 p-2 bg-black border"
+                type="text"
+                name="per-player"
+                id="per-player"
+              />
+            </div>
+
+            <!-- perPlayer section end -->
+            <div class="card-actions justify-center px-10 mt-6">
+              <button class="btn btn-primary w-full">Calculate</button>
+            </div>
+
+            <div class="text-gray-400 text-center flex justify-evenly mt-12">
+              <p>Player Expense</p>
+              <span id="player-expenses" class="text-white">5000</span>
+            </div>
+
+            <!-- Manager cost -->
+
+            <div class="flex justify-evenly items-center mt-6">
+              <label for="manager" class="text-gray-200"> Manager </label>
+              <input
+                class="w-36 p-2 bg-black border"
+                type="text"
+                name="manager"
+                id="manager"
+              />
+            </div>
+
+            <!-- Coach cost  -->
+            <div class="flex justify-evenly items-center mt-6">
+              <label for="coach" class="text-gray-200 mr-5"> Coach </label>
+              <input
+                class="w-36 p-2 bg-black border"
+                type="text"
+                name="coach"
+                id="coach"
+              />
+            </div>
+
+            <!-- calculate total -->
+
+            <div class="card-actions justify-center px-10 mt-6">
+              <button class="btn btn-primary w-full">Calculate Total</button>
+            </div>
+
+            <!-- total -->
+
+            <div class="text-gray-400 text-center flex justify-evenly mt-6">
+              <p class="text-xl">Total</p>
+              <span id="player-expenses" class="main-color text-xl">00</span>
+            </div>
+          </div>
+
+          <!-- Input section end -->
+        </section>
+      </main>
       <!-- Main area end -->
     </section>
     <!-- javascript -->
