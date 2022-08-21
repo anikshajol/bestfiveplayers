@@ -8,7 +8,7 @@
 
     <!-- stylesheet vanilla CSS -->
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <!-- Tailwind Link -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,17 +20,33 @@
     />
   </head>
   <body>
-    <!-- Header area start -->
+    <section class="container grid gap-y-10 mx-auto">
+      <!-- Header area start -->
 
-    <header>
-      <h1 class="text-5xl">My Best Five</h1>
-    </header>
+      <header class="bg-black w-full grid grid-cols-3">
+        <!-- Image section start -->
+        <section class="image">
+          <img src="./img/Group 12.png" alt="" />
+        </section>
 
-    <!-- Header area end -->
+        <!-- image section end -->
+        <section class="title flex flex-col justify-center">
+          <h1 class="text-5xl text-center font" id="header-title">
+            My Best Five
+          </h1>
+          <p class="text-center text-white pt-5">
+            This is one guy's list of the 6 best footballers on the planet right
+            now. It's as easy as that.
+          </p>
+        </section>
+      </header>
 
-    <!-- Main area start -->
+      <!-- Header area end -->
 
-    <!-- Main area end -->
+      <!-- Main area start -->
+
+      <!-- Main area end -->
+    </section>
     <!-- javascript -->
     <script src="./js/app.js"></script>
   </body>
