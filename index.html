@@ -216,12 +216,14 @@
 
             <!-- perPlayer section end -->
             <div class="card-actions justify-center px-10 mt-6">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button class="btn btn-primary w-full" id="calculate">
+                Calculate
+              </button>
             </div>
 
             <div class="text-gray-400 text-center flex justify-evenly mt-12">
               <p>Player Expense</p>
-              <span id="player-expenses" class="text-white">5000</span>
+              <span id="player-expenses" class="text-white">00</span>
             </div>
 
             <!-- Manager cost -->
@@ -232,7 +234,7 @@
                 class="w-36 p-2 bg-black border"
                 type="text"
                 name="manager"
-                id="manager"
+                id="manager-cost"
               />
             </div>
 
@@ -243,21 +245,23 @@
                 class="w-36 p-2 bg-black border"
                 type="text"
                 name="coach"
-                id="coach"
+                id="coach-cost"
               />
             </div>
 
             <!-- calculate total -->
 
             <div class="card-actions justify-center px-10 mt-6">
-              <button class="btn btn-primary w-full">Calculate Total</button>
+              <button class="btn btn-primary w-full" id="calculate-total">
+                Calculate Total
+              </button>
             </div>
 
             <!-- total -->
 
             <div class="text-gray-400 text-center flex justify-evenly mt-6">
               <p class="text-xl">Total</p>
-              <span id="player-expenses" class="main-color text-xl">00</span>
+              <span id="total-expenses" class="main-color text-xl">00</span>
             </div>
           </div>
 
