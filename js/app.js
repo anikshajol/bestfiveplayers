@@ -25,7 +25,7 @@ document.getElementById('calculate').addEventListener('click', function () {
     const getPerPlayerCost = document.getElementById('per-player');
 
     const setPerPlayerCost = parseInt(getPerPlayerCost.value);
-     getPerPlayerCost.value = '';
+    
 
     const perPlayerCost = setPerPlayerCost* nameArray.length;
 
