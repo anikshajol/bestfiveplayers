@@ -9,9 +9,9 @@ function displaySelectedPlayer(selectPlayer) {
 
   // console.log(selectPlayer);
 
-  const tableBody = document.getElementById('player-list');
+  const playerList = document.getElementById('player-list');
   
-    tableBody.innerHTML = '';
+  playerList.innerHTML = '';
 
   for(let i = 0; i<selectPlayer.length; i++){
   
@@ -19,36 +19,27 @@ function displaySelectedPlayer(selectPlayer) {
     let playerName = selectPlayer[i];
     
 
-    const tr = document.createElement('tr');
+    const list = document.createElement('li');
 
-    tr.innerHTML = ` 
-    
-    <th>${i+1}</th>
-    <td>${playerName}</td>
-    
-    
-    `
+    list.innerText=playerName;
   
 
-    tr.style.fontSize = "1.5rem";
-    tr.style.fontWeight = "bold"
+    list.style.fontSize = "1.5rem";
+    list.style.fontWeight = "bold";
+    list.style.listStyleType = 'number'
+    list.style.color = 'white'
+    list.style.paddingRight = '2rem'
     
-
-
-
-    
-    
-
     // error handle
     
       if(selectPlayer.length>5 ){
      
        alert("You can't select grater than five")
-       addToList(this.disabled=false)
-       return;
+      
+       return
       } 
 
-      tableBody.appendChild(tr);
+      playerList.appendChild(list);
     
     
        
@@ -69,8 +60,6 @@ function addToList(element) {
 element.disabled = true;
   
  nameArray.push(selectedPlayer);
-
-
 
    let addedSelectedPlayer = document.getElementById('list-item').innerText;
 

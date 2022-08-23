@@ -7,19 +7,15 @@
   color: #ff5e19;
 }
 
+#total-expenses {
+  color: #ff5e19;
+}
+
 .extra-height {
   height: 35rem;
 }
 
 .card {
   height: 26rem;
-  background-color: rgb(68, 67, 67);
-}
-
-#player-list {
-  padding: 3rem;
-}
-
-tbody {
   background-color: black;
 }
