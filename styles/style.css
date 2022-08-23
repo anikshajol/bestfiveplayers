@@ -14,3 +14,7 @@
 .card {
   height: 25rem;
 }
+
+.list-style-type {
+  list-style-type: number;
+}

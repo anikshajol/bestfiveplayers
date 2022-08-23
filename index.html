@@ -31,9 +31,9 @@
 
         <!-- image section end -->
         <section class="title flex flex-col justify-center">
-          <h1 class="text-5xl text-center font main-color">My Best Five</h1>
+          <h1 class="text-5xl text-center font main-color">Best Five Player</h1>
           <p class="text-center text-white pt-5">
-            This is one guy's list of the 6 best footballers on the planet right
+            This is one guy's list of the 5 best footballers on the planet right
             now. It's as easy as that.
           </p>
         </section>
@@ -44,7 +44,7 @@
       <!-- Main area start -->
       <main class="flex justify-evenly">
         <!-- card section start -->
-        <section class="grid grid-cols-3 gap-x-6">
+        <section id="card-btn" class="grid grid-cols-3 gap-x-6">
           <!-- card-1 -->
           <div class="card w-75 bg-base-100 shadow-xl">
             <figure>
@@ -61,7 +61,13 @@
                 <span>120 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  id="select-1"
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -84,7 +90,12 @@
                 <span>100 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -107,7 +118,12 @@
                 <span>100 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -129,7 +145,12 @@
                 <span>100 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -151,7 +172,12 @@
                 <span>100 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -173,7 +199,12 @@
                 <span>100 Assist</span>
               </div>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary w-full">Select</button>
+                <button
+                  class="select-btn btn btn-primary w-full"
+                  onclick="addToList(this)"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -183,13 +214,25 @@
         <!-- card section end -->
 
         <!--  Select player and input section -->
-        <section class="grid grid-rows-2">
+        <section class="flex flex-col">
           <!-- select player section start-->
-          <div
-            id="select-player"
-            class="card px-36 bg-black text-white shadow-xl"
-          >
-            <h2 class="text-3xl text-center pt-4">Selected-v</h2>
+          <div id="select-player" class="card px-36 bg-white shadow-xl">
+            <h2 class="text-3xl text-center pt-4 font-bold pb-5">Selected-5</h2>
+            <hr class="" />
+
+            <div id="list-item">
+              <table class="table w-full">
+                <tbody id="player-list">
+                  <!-- row 1 -->
+                  <!-- <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
           </div>
           <!-- select player section end-->
 
@@ -197,7 +240,7 @@
 
           <div
             id=""
-            class="extra-height w-75 bg-black text-white shadow-xl pb-14"
+            class="extra-height w-75 bg-black text-white shadow-xl pb-14 mt-11"
           >
             <h2 class="text-3xl text-center pt-4">Budget</h2>
 
@@ -271,6 +314,7 @@
       <!-- Main area end -->
     </section>
     <!-- javascript -->
+    <script src="./js/script.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

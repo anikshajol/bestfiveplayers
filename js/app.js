@@ -24,7 +24,9 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     const getPerPlayerCost = document.getElementById('per-player');
 
-    const perPlayerCost = parseInt(getPerPlayerCost.value);
+    const setPerPlayerCost = parseInt(getPerPlayerCost.value);
+
+    const perPlayerCost = setPerPlayerCost* nameArray.length;
 
 
 
@@ -34,6 +36,14 @@ document.getElementById('calculate').addEventListener('click', function () {
 
 
     playerExpense("player-expenses", perPlayerCost)
+
+
+
+
+    if(isNaN(perPlayerCost)){
+        alert('input a valid number');
+        document.getElementById('player-expenses').innerText= 00
+    }
 
    
    
@@ -75,8 +85,15 @@ document.getElementById('calculate-total').addEventListener('click', function ()
    const getTotalExpenseOfMyTeam = document.getElementById('total-expenses');
 
 
+   if(isNaN(managerCost && coachCost)){
+    alert('Please Input Number')
+    totalCost = 00
+   
+   }
 
    getTotalExpenseOfMyTeam.innerText = totalCost;
+
+
 
 })
 
