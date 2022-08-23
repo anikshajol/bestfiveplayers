@@ -32,7 +32,10 @@ function displaySelectedPlayer(selectPlayer) {
 
     tr.style.fontSize = "1.5rem";
     tr.style.fontWeight = "bold"
-  
+    
+
+
+
     
     
 
@@ -44,7 +47,7 @@ function displaySelectedPlayer(selectPlayer) {
        addToList(this.disabled=false)
        return;
       } 
-      
+
       tableBody.appendChild(tr);
     
     

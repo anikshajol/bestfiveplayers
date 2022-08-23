@@ -12,9 +12,14 @@
 }
 
 .card {
-  height: 25rem;
+  height: 26rem;
+  background-color: rgb(68, 67, 67);
 }
 
-.list-style-type {
-  list-style-type: number;
+#player-list {
+  padding: 3rem;
+}
+
+tbody {
+  background-color: black;
 }
