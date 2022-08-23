@@ -15,9 +15,9 @@ function displaySelectedPlayer(selectPlayer) {
 
   for(let i = 0; i<selectPlayer.length; i++){
   
-    // const playerName = nameArray[i];
+  
     let playerName = selectPlayer[i];
-    // console.log(playerName);
+    
 
     const tr = document.createElement('tr');
 
@@ -34,18 +34,22 @@ function displaySelectedPlayer(selectPlayer) {
     tr.style.fontWeight = "bold"
   
     
+    
 
     // error handle
     
       if(selectPlayer.length>5 ){
      
        alert("You can't select grater than five")
-       
+       addToList(this.disabled=false)
+       return;
       } 
+      
+      tableBody.appendChild(tr);
     
-      else{
-        tableBody.appendChild(tr);
-      }
+    
+       
+     
       
       
   }
@@ -69,13 +73,8 @@ element.disabled = true;
 
    let setSelectedPlayer = nameArray.length;
 
-   if(selectedPlayer>5){
-    alert('hi')
-    
-   
-   } 
-
-   displaySelectedPlayer(nameArray)
+  
+ displaySelectedPlayer(nameArray)
 
  
    

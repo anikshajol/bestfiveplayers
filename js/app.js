@@ -42,8 +42,9 @@ document.getElementById('calculate').addEventListener('click', function () {
 
     if(isNaN(perPlayerCost)){
         alert('input a valid number');
-        document.getElementById('player-expenses').innerText= 00
-    }
+        document.getElementById('player-expenses').innerText= 00;
+        return;
+    } 
 
    
    
